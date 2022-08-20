@@ -6,6 +6,7 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 a{
@@ -68,28 +69,28 @@ nav .profile-link{
 nav .profile-link a{
     color: black;
     border-bottom: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-main{
+.home-main {
     height: 100%;
     margin: 0;
     background-image: url("../assets/img/fondo_blog.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
     display: grid;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-
 }
 
-main h1{
+.home-main .home-main-title{
     margin-top: 75px;
     color: #133930;
     font-family: 'Times New Roman', Times, serif;
     
 }
-main a{
+.home-main .home-main-button{
     background-color: #47cfac;
     color: black;
     height: 40px;
@@ -98,11 +99,11 @@ main a{
     align-items: center;
     justify-content: center;
 }
-main a:hover{
+.home-main a:hover {
     color: white;
 }
 
-main a span{
+.home-main .home-main-button span{
     font-weight: bold;
     
 }
