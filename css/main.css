@@ -299,6 +299,7 @@ footer p{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 100px;
 }
 
 .main-perfil-presentacion h2{
