@@ -48,10 +48,16 @@ header .header-icons-container .icons {
     margin-right: 100px;
     display: flex;
     justify-content: end;
+    align-items: center;
+    gap: 15px;
 }
-
-header .icons span {
+header .header-icons-container .icons .github img{
+    width: 33.5px;
     color: white;
+    padding-left: 16px;
+}
+header .icons span {
+    color: black;
 }
 
 nav{
