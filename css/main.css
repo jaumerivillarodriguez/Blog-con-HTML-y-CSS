@@ -52,9 +52,10 @@ header .header-icons-container .icons {
     gap: 15px;
 }
 header .header-icons-container .icons .github img{
-    width: 33.5px;
+    width: 33px;
     color: white;
     padding-left: 16px;
+    margin-top: 3px;
 }
 header .icons span {
     color: black;
@@ -178,7 +179,6 @@ nav .profile-link a{
     background-color: #48cfad;
 }
 
-/*.Blogs parte de abajo.*/
 
 .blogs-post-container .post-container{
     display: inline-block;
@@ -190,11 +190,18 @@ nav .profile-link a{
 .blogs-post-container .post-container p{
     margin-bottom: 35px;
 }
+.blogs-post-container .post-container .post-container-texto{
+    width: 100%;
+    height: 110.40px; /*Si hay menos texto para que la imagen y las dimensiones del articulo no se muevan*/
+    overflow: hidden; /*Para que no me deje mostrar mas texto*/
+    
+}
 
 .blogs-post-container .post-container img{
     width: 100%;
     height: 250px;
     object-fit: cover;
+    
 }
 
 /*Footer*/
@@ -212,7 +219,7 @@ footer p{
     margin-top: 30px;
 }
 
-/*Blog.html*/
+/*Blog.html blog individual */
 .blog-grid-container{
     width: 100%;
     display: grid;
@@ -235,6 +242,9 @@ footer p{
 
 .blogpost-main-container{
     padding: 0 50px 40px;
+}
+.blogpost-main-container p{
+    font-size: 18px;
 }
 .blogpost-main-container h3{
     border-bottom: 1px solid #cdd2da;
