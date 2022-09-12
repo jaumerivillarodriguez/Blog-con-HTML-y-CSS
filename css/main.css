@@ -129,7 +129,7 @@ nav .profile-link a{
 
 /*-----------------------------------------------------------------*/
 /*Blogs.html*/
-
+/*Seccion de arriba*/
 .blogs-news-container {
     background-color: #e6e9ed;
     padding: 0 50px 40px;
@@ -157,16 +157,6 @@ nav .profile-link a{
     margin-bottom: 35px;
 }
 
-.blogs-post-container{
-    padding: 0 50px 40px;
-}
-
-.blogs-post-container h3{
-    border-bottom: 1px solid #cdd2da;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
 .blogs-button{
     border: 1px solid #47cfac;
     padding: 10px 15px;
@@ -178,8 +168,15 @@ nav .profile-link a{
     color: white;
     background-color: #48cfad;
 }
-
-
+/*--------------------------------------------------------*/
+.blogs-post-container{
+    padding: 0 50px 40px;
+}
+.blogs-post-container h3{
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
+    text-align: center;
+}
 .blogs-post-container .post-container{
     display: inline-block;
     padding-left: 10px;
@@ -219,26 +216,28 @@ footer p{
     margin-top: 30px;
 }
 
-/*Blog.html blog individual */
+/*blog individual */
 .blog-grid-container{
     width: 100%;
     display: grid;
-    grid-template-rows: 3fr 2fr 1fr;
+    grid-template-rows: 2fr 2fr;
 }
 /*Blog img*/
 .blogpost-img-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 50px 40px;
-
+    padding:0;
+    
 }
 
 .blogpost-img-container img{
-    width: 65%;
+    max-width: 80%;
+    max-height:80%;
 }
+
 /*-------------------------------*/
-/*Blog-main*/
+/*Blog-main individual*/
 
 .blogpost-main-container{
     padding: 0 50px 40px;
@@ -249,44 +248,47 @@ footer p{
 .blogpost-main-container h3{
     border-bottom: 1px solid #cdd2da;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 .blogpost-main-container article h1{
     font-size: 35px ;
 }
-
-/*----------------*/
-/*Contacto-bacground gris*/
-
-.contact-main-container{
-    width: 100%;
-    height: 100%;
-    background-color: #cdd2da;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+/*-----------------------------------------------------------------------------*/
+/*GradoSuperior.html*/
+.blog-grid-container-gradosuperior{
+    grid-template-rows: 1fr 2fr;
 }
-
-.contact-main-container .contact-main-container-div {
+.container-gradosuperior{
+    max-width: 980px;
+    margin: auto;
+}
+/*sección de arriba*/
+.blogpost-img-container-gradosuperior{
+    margin-top: 50px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
-
-.contact-main-container figure{
-    margin-right:5px;
+.blogpost-img-container-gradosuperior img{
+    max-width: 980px;
+    height: 500px;
 }
-.contact-main-container img{
-    width: 100px;
-}
-
-.contact-main-container .contact-main-container-div .contact{
-    width: 250px;
-}
-.contact-main-container .contact-main-container-div .contact a{
-    border-bottom: 1px solid black;
+/*sección principal*/
+.container-gradosuperior div{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    
 }
 
-/*---------------------------------------------*/
+.blogpost-main-container .container-gradosuperior img{
+    width:  100%;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+
+/*----------------------------------------------------------------------------*/
 /*perfil.html*/
 
 .perfil-main{
@@ -343,5 +345,35 @@ footer p{
     gap: 30px;
     padding-left: 70px;
     padding-right: 30px;
+}
+
+/*Contacto-bacground gris*/
+
+.contact-main-container{
+    width: 100%;
+    height: 100%;
+    background-color: #cdd2da;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-main-container .contact-main-container-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-main-container figure{
+    margin-right:5px;
+}
+.contact-main-container img{
+    width: 100px;
+}
+
+.contact-main-container .contact-main-container-div .contact{
+    width: 250px;
+}
+.contact-main-container .contact-main-container-div .contact a{
+    border-bottom: 1px solid black;
 }
 

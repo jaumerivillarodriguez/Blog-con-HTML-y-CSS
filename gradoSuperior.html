@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <link rel="stylesheet" href="./css/font/flaticon.css">
+</head>
+<body>
+    <header>
+        <section class="header-icons-container">
+            <div class="icons">
+                <a href="https://www.instagram.com/jaumerivilla/" target="_blank"><span class="flaticon-011-instagram"></span></a>
+                <a href="https://www.linkedin.com/in/jaume-rivilla-rodr%C3%ADguez/" target="_blank"><span class="flaticon-010-linkedin"></span></a>
+                <a href="https://github.com/jaumerivillarodriguez" target="_blank" class="github"><img src="./assets/img/github.png" alt=""></a>
+            </div>
+        </section>
+
+        <nav>
+            <section class="nav-logo-container">
+                <a href="index.html"><img src="./assets/img/Logo-negro.png" alt="Logo de mi blog"></a>
+            </section>
+            <section class="profile-link">
+                <a href="/perfil.html">Perfil</a>
+            </section>
+        </nav>
+    </header>
+
+    <main class="blog-grid-container  blog-grid-container-gradosuperior">
+        <section class="blogpost-img-container blogpost-img-container-gradosuperior">
+            <img src="./assets/img/blogpost/gradoSuperiorArduino.jpg" alt="Foto de la maqueta de mi proyecto">
+        </section>
+
+        <section class="blogpost-main-container">
+            <div class="grid-container">
+                <h3>17/04/2018</h3>
+                <article>
+                    <h1>Proyecto de grado superior</h1>
+                    <p>Se trata de mi proyecto final de grado superior realizado en Escuelas Profesionales Luis Amigó con el que me gané una mención honorífica al mejor proyecto de dicho curso. Se trata de hacer un proyecto de gimnasio en el que dispones de un enunciado con las... partes obligatorias que tiene que tener el gimnasio con diferentes problemas que tengo que resolver utilizando mi Arduino. Las partes obligatorias es que tenia que realizar control de aforo, de temperatura, de iluminación... etc en las diferentes salas del gimnasio. La parte mas importante era la programación , pero también hice una maqueta como se puede ver en las imagenes. Para el proyecto también era obligatorio hacer los planos de las diferentes salas, (las realice en AutoCad), los planos de conexión con los diferentes sensores y actuadores, (las realice con un programa llamado fritzing), un pliego de condiciones, un presupuesto real y estudios con entidad propia. El mayor problema que se planteo fue que el proyecto para que tuviera buena nota se tenia que realizar con un arduino , ya que si lo hacias con dos era bastante fácil ya que con delays funcionaba. Los delays hace que se pare el programa durante el tiempo que le pongas en milisegundos y al hacerlo con un arduino todos los pines estaban en funcionamiento y con delays el arduino no funcionaba bien. Asi que tuve que realizar el proyecto con milis() que es una función que te permite controlar el tiempo de ejecución de un comando. Lo que me llevo mucho mas tiempo pero aprendí mucho más.</p>
+                </article>
+            </div>
+            <div class="container-gradosuperior">
+                <h3>Imagenes del proyecto</h3>
+                <div>
+                    <figure class="imagenes-gradosuperior">
+                        <img src="./assets/img/blogpost/proyecto-grado-superior.jpg" alt="Maqueta entera">
+                    </figure>
+                
+                    <figure class="imagenes-gradosuperior">
+                        <img src="./assets/img/blogpost/gradoSuperior-fritzing.PNG" alt="fritzing">
+                    </figure>
+                    <figure class="imagenes-gradosuperior">
+                        <img src="./assets/img/blogpost/gradoSuperiorTrabajando.jpg" alt="trabajando">
+                    </figure>   
+                    <figure class="imagenes-gradosuperior">
+                        <img src="./assets/img/blogpost/gradoSuperiorAutocad.jpg" alt="Autocad">
+                    </figure>           
+                </div>  
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><p>Todos mis proyectos los puedes encontrar en mi Github</p></p>
+    </footer>
+
+</body>
+</html>
