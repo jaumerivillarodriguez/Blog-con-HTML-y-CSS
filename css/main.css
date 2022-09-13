@@ -418,15 +418,16 @@ footer p{
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color:#47cfac; /* Set a background color */
-    color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
+    background-image: url("../assets/logo/punta-de-flecha-hacia-arriba.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #goTop:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #47cfac; /* Add a dark-grey background on hover */
 }
 
