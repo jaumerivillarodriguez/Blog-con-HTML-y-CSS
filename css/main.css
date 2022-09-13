@@ -220,14 +220,14 @@ footer p{
 .blog-grid-container{
     width: 100%;
     display: grid;
-    grid-template-rows: 2fr 2fr;
+    grid-template-rows: 550px 2fr;
 }
 /*Blog img*/
 .blogpost-img-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding:0;
+    align-items: flex-start;
+    margin-top: 50px;
     
 }
 
@@ -255,63 +255,32 @@ footer p{
     font-size: 35px ;
 }
 /*-----------------------------------------------------------------------------*/
-/*GradoSuperior.html*/
-.blog-grid-container-gradosuperior{
-    grid-template-rows: 1fr 2fr;
-}
-.container-gradosuperior{
-    max-width: 980px;
-    margin: auto;
-}
-/*sección de arriba*/
-.blogpost-img-container-gradosuperior{
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-}
-.blogpost-img-container-gradosuperior img{
-    max-width: 980px;
-    height: 500px;
-}
-/*sección principal*/
-.container-gradosuperior div{
-    display: grid;
-    grid-template-columns: repeat(2,50%);
-    gap:10px;
-    
+/*Sección imagenes*/
+.blog-grid-container .container-imagenes{
+    width: 100%;
 }
 
-.blogpost-main-container .container-gradosuperior .imagenes-gradosuperior{
-    width:  100%;
-    height: 300px;
+.container-imagenes .grid-container-imagenes-blog{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 15px;
+}
+.container-imagenes .grid-container-imagenes-blog-gradosuperior{
+    grid-template-columns: 1fr 1fr;
+
+}
+.grid-container-item{
+    width: 100%;
+    max-height: 400px;
+}
+
+.grid-container-item img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    
-}
-
-/*deportes.html*/
-.blog-grid-container-deportes{
-    grid-template-rows: 1fr 2fr;
-}
-.blogpost-img-container-deportes{
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-}
-.blogpost-img-container-gradosuperior-deportes{
-    max-width: 980px;
-    height: 500px;
-}
-/*sección principal*/
-.container-deportes div{
-    display: grid;
-    grid-template-columns: repeat(3,30%);
-    gap:20px;
-    
-}
-.blogpost-main-container .container-deportes .imagenes-deportes{
-    width:  100%;
-    height: 450px;
-    object-fit: cover; 
 }
 
 
