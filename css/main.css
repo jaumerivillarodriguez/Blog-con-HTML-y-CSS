@@ -95,6 +95,7 @@ nav .profile-link a{
     height: 100%;
     margin: 0;
     background-image: url("../assets/img/fondo_blog.jpg");
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -290,7 +291,7 @@ footer p{
 .perfil-main{
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 400px 2fr 250px;
 }
 /*presentación sección de arriba*/
 .main-perfil-presentacion{
@@ -301,19 +302,20 @@ footer p{
     
 }
 
-.main-perfil-presentacion figure{
-    padding-left: 120px;
-    margin-right: 0;
+.main-perfil-presentacion .main-perfil-presentacion-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-perfil-presentacion img{
-    width: 250px;
+    width: 50%;
 }
 
-.main-perfil-presentacion div{
+.main-perfil-presentacion .main-perfil-presentacion-texto{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 100px;
+    padding-left: 50px;
 }
 
 .main-perfil-presentacion h2{
@@ -325,22 +327,61 @@ footer p{
 
 /*--------------------*/
 /*Proyectos sección central*/
-.main-perfil-proyectos{
+.main-perfil-curriculum{
+    height: auto;
     margin-top: 35px;
-    padding: 0 50px 40px;
+    padding: 0 50px 0 40px;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-bottom: 50px;
 }
-.main-perfil-proyectos h3{
+.main-perfil-curriculum h3{
     text-align: center;
     border-bottom: 1px solid #cdd2da;
     padding-bottom: 30px;
 }
 
-.main-perfil-proyectos .main-perfil-proyectos-grid{
+.main-perfil-curriculum .main-perfil-curriculum-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
-    padding-left: 70px;
+    padding-left: 30px;
     padding-right: 30px;
+}
+
+.main-perfil-curriculum .main-perfil-curriculum-grid .main-perfil-curriculum-seccion .main-perfil-curriculum-titulo{
+    display: flex;
+    gap: 10px;
+}
+
+.main-perfil-curriculum .main-perfil-curriculum-grid .main-perfil-curriculum-seccion .main-perfil-curriculum-titulo img{
+    width: 50px;
+    object-fit: contain;
+}
+.main-perfil-curriculum .main-perfil-curriculum-grid .main-perfil-curriculum-seccion .main-perfil-curriculum-titulo h4{
+    border-bottom: 1px solid black;
+}
+
+.main-perfil-curriculum .main-perfil-curriculum-grid .main-perfil-curriculum-seccion .main-perfil-curriculum-habilidades{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main-perfil-curriculum .main-perfil-curriculum-grid .main-perfil-curriculum-seccion .main-perfil-curriculum-habilidades div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+.main-perfil-curriculum .main-perfil-curriculum-grid .main-perfil-curriculum-seccion .main-perfil-curriculum-habilidades div h5{
+    border-bottom: 1px solid black;
+}
+.main-perfil-curriculum .main-perfil-curriculum-grid .main-perfil-curriculum-seccion .main-perfil-curriculum-habilidades div p{
+    font-size: 12px;
+}
+
+.main-perfil-curriculum .main-perfil-curriculum-grid .main-perfil-curriculum-seccion .main-perfil-curriculum-habilidades img{
+    width: 50px;
+    object-fit: contain;
 }
 
 /*Contacto-bacground gris*/
@@ -351,6 +392,7 @@ footer p{
     background-color: #cdd2da;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-size: 17px;
 }
 
 .contact-main-container .contact-main-container-div {
@@ -363,7 +405,7 @@ footer p{
     margin-right:5px;
 }
 .contact-main-container img{
-    width: 100px;
+    width: 70px;
 }
 
 .contact-main-container .contact-main-container-div .contact{
@@ -372,8 +414,6 @@ footer p{
 .contact-main-container .contact-main-container-div .contact a{
     border-bottom: 1px solid black;
 }
-
-
 
 
 /* Botón para volver al comienzo de la página  */

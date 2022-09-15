@@ -1,4 +1,10 @@
 @media (max-width:900px) {
+    .home-main .home-main-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*blogs.html*/
     .blogs-main-new {
         grid-template-columns: 1fr;
         grid-template-rows: 3fr;
@@ -29,6 +35,12 @@
         grid-template-rows: 3fr;
     }
 
+    .container-imagenes .grid-container-imagenes-blog{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
+    }
+
+
     
 }
 
@@ -40,5 +52,28 @@
     .main-perfil-proyectos .main-perfil-proyectos-grid{
         grid-template-columns: 1fr;
         grid-template-rows: 4fr;
+    }
+
+    .container-imagenes .grid-container-imagenes-blog-gradosuperior{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+    }
+
+    .container-imagenes .grid-container-imagenes-blog{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+    }
+}
+
+@media(max-width:1024px){
+    .container-imagenes .grid-container-imagenes-blog-gradosuperior {
+        grid-template-columns: 2fr;
+        gap:10px
+    }
+    .container-imagenes .grid-container-imagenes-blog-gradosuperior img {
+        margin: 0 auto;
+        min-width: 469px;
+        width: 80%;
+        height: 90%;
     }
 }
