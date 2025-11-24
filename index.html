@@ -1,35 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi blog</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/media-queries.css">
-    <link rel="stylesheet" href="./css/font/flaticon.css">
-    
+    <title>Mi Blog Personal & Portfolio</title>
+    <meta name="description" content="Blog personal sobre noticias, productos digitales y proyectos de Power BI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="home-body">
-    <header>
-        <section class="header-icons-container">
-            <div class="icons">
-                <a href="https://www.instagram.com/jaumerivilla/" target="_blank"><span class="flaticon-011-instagram"></span></a>
-                <a href="https://www.linkedin.com/in/jaume-rivilla-rodr%C3%ADguez/" target="_blank"><span class="flaticon-010-linkedin"></span></a>
-                <a href="https://github.com/jaumerivillarodriguez" target="_blank" class="github"><img src="./assets/logo/github.png" alt=""></a>
-            </div>
-        </section>
 
-        <nav>
-            <section class="nav-logo-container">
-                <a href="index.html"><img src="./assets/img/Logo-negro.png" alt="Logo de mi blog"></a>
-            </section>
-        </nav>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Bienvenido a mi <span class="highlight">Espacio Digital</span></h1>
+                <p>Explorando datos, tecnología y nuevas oportunidades.</p>
+                <a href="#productos" class="btn btn-primary">Ver Recomendaciones</a>
+            </div>
+            <div class="hero-image">
+                <div class="image-container-3d">
+                    <div class="image-flipper">
+                        <div class="image-front">
+                            <img src="assets/img/fotoperfil.png" alt="Foto de Perfil">
+                        </div>
+                        <div class="image-back">
+                            <!-- Image on back as well for simple flip -->
+                            <img src="assets/img/fotoperfil.png" alt="Foto de Perfil">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <main class="home-main">
-        
-        <h1 class="home-main-title">¡Bienvenido a mi mundo!</h1>
-        <a class="home-main-button" href="blogs.html"><span>Entra ya!</span></a>    
-    </main>
+
+    <!-- Affiliate Products Section -->
+    <section id="productos" class="section">
+        <div class="container">
+            <h2 class="section-title">Herramientas <span class="highlight">Top</span></h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <div class="product-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <h3>Curso de Data Analytics</h3>
+                    <p>Domina el análisis de datos con este curso completo.</p>
+                    <a href="#" class="btn btn-outline">Ver más</a>
+                </article>
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <div class="product-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                    <h3>Plantillas Power BI</h3>
+                    <p>Acelera tus reportes con plantillas profesionales.</p>
+                    <a href="#" class="btn btn-outline">Ver más</a>
+                </article>
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <div class="product-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Hosting Premium</h3>
+                    <p>El mejor alojamiento para tus proyectos web.</p>
+                    <a href="#" class="btn btn-outline">Ver más</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Últimas <span class="highlight">Noticias</span></h2>
+            <div class="blog-grid">
+
+                <!-- Blog Item 1 -->
+                <article class="blog-card" onclick="openModal('modal-blog-1')">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                            alt="Blog Image">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">Hoy</span>
+                        <h3 class="blog-title">Lanzamiento del nuevo dashboard de ventas</h3>
+                        <p class="blog-excerpt">Descubre las nuevas funcionalidades que hemos implementado para mejorar
+                            la visualización de tus KPIs más importantes...</p>
+                        <span class="read-more">Leer más <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </article>
+
+                <!-- Blog Item 2 -->
+                <article class="blog-card" onclick="openModal('modal-blog-2')">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                            alt="Blog Image">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">20 Nov 2025</span>
+                        <h3 class="blog-title">Cómo optimizar tus consultas en DAX</h3>
+                        <p class="blog-excerpt">Aprende los mejores trucos para que tus reportes vuelen y no pierdas
+                            tiempo esperando a que carguen los datos...</p>
+                        <span class="read-more">Leer más <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </article>
+
+                <!-- Blog Item 3 -->
+                <article class="blog-card" onclick="openModal('modal-blog-3')">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80"
+                            alt="Blog Image">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">15 Nov 2025</span>
+                        <h3 class="blog-title">Tendencias en visualización de datos</h3>
+                        <p class="blog-excerpt">Analizamos qué se viene para el próximo año en el mundo del Business
+                            Intelligence y la analítica avanzada...</p>
+                        <span class="read-more">Leer más <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="sobre-mi" class="section">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2 class="section-title">Sobre <span class="highlight">Mí</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Power BI Portfolio Section (New Card Layout) -->
+    <section id="portfolio" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Mis <span class="highlight">Dashboards</span></h2>
+            <div class="portfolio-grid-cards">
+
+                <!-- Dashboard Card 1 -->
+                <article class="portfolio-card" onclick="openModal('modal-pbi-1')">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                            alt="Dashboard Preview">
+                        <div class="portfolio-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Dashboard de Ventas Globales</h3>
+                        <p>Análisis detallado de ventas por región y categoría de producto.</p>
+                    </div>
+                </article>
+
+                <!-- Dashboard Card 2 -->
+                <article class="portfolio-card" onclick="openModal('modal-pbi-2')">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                            alt="Dashboard Preview">
+                        <div class="portfolio-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Informe Financiero Anual</h3>
+                        <p>Reporte interactivo de estado de resultados y balance general.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mi Blog Personal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- BLOG MODALS -->
+    <div id="modal-blog-1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-blog-1')">&times;</span>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+                alt="Full Image" class="modal-img">
+            <div class="modal-text">
+                <span class="blog-date">Hoy</span>
+                <h2>Lanzamiento del nuevo dashboard de ventas</h2>
+                <p>Aquí iría el contenido completo de la noticia. Lorem ipsum dolor sit amet...</p>
+                <button class="btn btn-outline" onclick="closeModal('modal-blog-1')">Volver al Blog</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-blog-2" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-blog-2')">&times;</span>
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
+                alt="Full Image" class="modal-img">
+            <div class="modal-text">
+                <span class="blog-date">20 Nov 2025</span>
+                <h2>Cómo optimizar tus consultas en DAX</h2>
+                <p>Contenido completo sobre DAX...</p>
+                <button class="btn btn-outline" onclick="closeModal('modal-blog-2')">Volver al Blog</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-blog-3" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-blog-3')">&times;</span>
+            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&q=80"
+                alt="Full Image" class="modal-img">
+            <div class="modal-text">
+                <span class="blog-date">15 Nov 2025</span>
+                <h2>Tendencias en visualización de datos</h2>
+                <p>Contenido completo sobre tendencias...</p>
+                <button class="btn btn-outline" onclick="closeModal('modal-blog-3')">Volver al Blog</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- POWER BI MODALS -->
+    <div id="modal-pbi-1" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close-modal" onclick="closeModal('modal-pbi-1')">&times;</span>
+            <div class="modal-text">
+                <h2>Dashboard de Ventas Globales</h2>
+                <div class="iframe-wrapper">
+                    <iframe title="Dashboard_Datos_ES"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiODFhNGFhODItYmVmYS00MWVhLWIwNmEtZjAxNDUxOWFlOTY2IiwidCI6IjI1Y2UwMjYxLWJiZDYtNDljZC1hMWUyLTU0MjYwODg2ZDE1OSJ9"
+                        frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <br>
+                <button class="btn btn-outline" onclick="closeModal('modal-pbi-1')">Volver</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-pbi-2" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close-modal" onclick="closeModal('modal-pbi-2')">&times;</span>
+            <div class="modal-text">
+                <h2>Informe Financiero Anual</h2>
+                <div class="iframe-wrapper">
+                    <iframe title="Informe_link"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiZTBmN2RmODctNTA3ZC00NTcyLWEwMjEtZDBjYjc0MWZkMGY1IiwidCI6IjI1Y2UwMjYxLWJiZDYtNDljZC1hMWUyLTU0MjYwODg2ZDE1OSJ9"
+                        frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <br>
+                <button class="btn btn-outline" onclick="closeModal('modal-pbi-2')">Volver</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+
 </body>
+
 </html>
