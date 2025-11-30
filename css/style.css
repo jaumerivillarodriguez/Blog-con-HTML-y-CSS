@@ -169,8 +169,8 @@ a {
 
 /* 3D Flip Effect */
 .image-container-3d {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     position: relative;
 }
 
@@ -470,6 +470,7 @@ a {
 .modal-text h2 {
     text-align: left;
     margin-bottom: 1rem;
+    color: #ffffff;
 }
 
 /* Iframe in Modal */
